@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-shadow: none;
+  border: none;
+  font-family: "Arial", "sans-serif";
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+body .container {
+  width: 1200px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  align-content: center;
+}
+body .container .bloco {
+  background-color: var(--fundo-div);
+  min-height: 230px;
+  border-radius: 12px;
+  margin: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+body .container .bloco img {
+  position: absolute;
+  margin: 0 -20px;
+  height: 70px;
+  object-fit: cover;
+  object-position: 0 -10px;
+  /* corta a direira e baixo = try 20% 10% */
+}
+body .container .bloco .block {
+  z-index: 20;
+  background-color: var(--fundo-div);
+  height: 180px;
+  width: 100%;
+  border-radius: 10px;
+  align-self: flex-end;
+}
+body .container .bloco .block:hover {
+  background-color: var(--div-select);
+}
+body .container .bloco .block .opcao {
+  display: flex;
+  justify-content: space-between;
+  direction: row;
+  margin: 0 30px;
+}
+body .container .bloco .block .opcao div {
+  margin-top: 20px;
+}
+body .container .bloco .block .opcao .img {
+  background-image: url(../assets/icon-ellipsis.svg);
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .container .bloco .block .opcao .img:hover {
+  cursor: pointer;
+}
+body .container .bloco .block .hrs {
+  font-size: 3.3rem;
+  margin: 0 30px;
+  padding-top: 15px;
+}
+body .container .bloco .block .sub-text {
+  font-size: 0.9em;
+  margin: 0 30px;
+  font-weight: 500;
+  color: var(--sub-text);
+}
+body .container .bloco-maior {
+  grid-area: 3/1/1/1;
+  display: block;
+}
+body .container .bloco-maior .texts {
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column-reverse;
+  margin: 15px 30px;
+}
+body .container .bloco-maior .texts .bloco-maior-opcoes {
+  color: var(--sub-text);
+}
+body .container .bloco-maior .texts .bloco-maior-opcoes:hover {
+  transition: 0.5s;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+body .container .bloco-maior .block-maior {
+  background-color: var(--block-maior);
+  height: 70%;
+  width: 100%;
+  border-radius: 12px;
+}
+body .container .bloco-maior .block-maior .bloco-maior-img {
+  border-radius: 50%;
+  height: 80px;
+  border: 4px solid white;
+  margin: 30px;
+  object-position: 0;
+}
+body .container .bloco-maior .block-maior .bloco-maior-text {
+  padding-top: 150px;
+  color: #dddbdb;
+  font-size: 1em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+body .container .bloco-maior .block-maior .bloco-maior-title {
+  color: #dddbdb;
+  font-size: 2.3rem;
+  font-weight: 400;
+  padding-left: 30px;
+}
+
+:root {
+  --background: #0D1323;
+  --fundo-div: #1D204B;
+  --div-select: #34397B;
+  --block-maior: #5746EA;
+  --sub-text: #676B9B;
+  --orange: #FF8B64;
+  --light-blue: #56C2E6;
+  --pink: #FF5E7D;
+  --green: #4BCF83;
+  --purple: #7235D1;
+  --yellow: #F1C75B;
+}
+
+/*# sourceMappingURL=estilo.css.map */
